@@ -1,0 +1,52 @@
+{
+  "chats": [
+    {
+      "id": "1",
+      "participants_Id": ["1", "2"],
+      "messages": [
+        {
+          "sender": "1",
+          "timestamp": "2024-09-29T09:00:00Z",
+          "content": "Hola Ana, ¿cómo va el proyecto?"
+        },
+        {
+          "sender": "2",
+          "timestamp": "2024-09-29T09:05:00Z",
+          "content": "Hola Juan, va bien. ¿Puedes revisar el código del módulo de autenticación?"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "participants_Id": ["3", "4"],
+      "messages": [
+        {
+          "sender": "3",
+          "timestamp": "2024-09-29T10:00:00Z",
+          "content": "Laura, encontré un bug en la API. ¿Puedes revisarlo?"
+        },
+        {
+          "sender": "4",
+          "timestamp": "2024-09-29T10:10:00Z",
+          "content": "Claro, Carlos. Envíame los detalles."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "participants_Id": ["5", "6"],
+      "messages": [
+        {
+          "sender": "5",
+          "timestamp": "2024-09-29T11:00:00Z",
+          "content": "María, necesitamos optimizar la base de datos. ¿Tienes tiempo hoy?"
+        },
+        {
+          "sender": "6",
+          "timestamp": "2024-09-29T11:15:00Z",
+          "content": "Sí, Pedro. Lo reviso después de la reunión."
+        }
+      ]
+    }
+  ]
+}

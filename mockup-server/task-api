@@ -1,0 +1,205 @@
+{
+    "tasks": [
+      {
+        "id": "1",
+        "title": "Desarrollar landing page",
+        "description": "Crear una landing page para el nuevo producto.",
+        "assignedTo": "1",
+        "startDate": "2024-09-01",
+        "endDate": "2024-09-10",
+        "status": "completed",
+        "comments": [
+          {
+            "userId": "2",
+            "comment": "Landing page completada y revisada.",
+            "timestamp": "2024-09-09T10:00:00Z"
+          }
+        ],
+        "files": [
+          {
+            "fileId": "1",
+            "uploadedBy": "1",
+            "uploadDate": "2024-09-05T12:00:00Z",
+            "description": "Diseño inicial de la landing page."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Implementar autenticación",
+        "description": "Añadir autenticación de usuarios con JWT.",
+        "assignedTo": "3",
+        "startDate": "2024-09-02",
+        "endDate": "2024-09-15",
+        "status": "pending",
+        "comments": [
+          {
+            "userId": "4",
+            "comment": "Revisar la seguridad de los tokens.",
+            "timestamp": "2024-09-10T14:00:00Z"
+          }
+        ],
+        "files": [
+          {
+            "fileId": "2",
+            "uploadedBy": "3",
+            "uploadDate": "2024-09-08T09:00:00Z",
+            "description": "Documentación sobre JWT."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Configurar CI/CD",
+        "description": "Configurar pipeline de CI/CD en GitHub Actions.",
+        "assignedTo": "5",
+        "startDate": "2024-09-03",
+        "endDate": "2024-09-20",
+        "status": "not_assigned",
+        "comments": [],
+        "files": []
+      },
+      {
+        "id": "4",
+        "title": "Crear base de datos",
+        "description": "Diseñar y crear la base de datos para la aplicación.",
+        "assignedTo": "6",
+        "startDate": "2024-09-04",
+        "endDate": "2024-09-18",
+        "status": "completed",
+        "comments": [
+          {
+            "userId": "7",
+            "comment": "Base de datos creada y optimizada.",
+            "timestamp": "2024-09-17T11:00:00Z"
+          }
+        ],
+        "files": [
+          {
+            "fileId": "3",
+            "uploadedBy": "6",
+            "uploadDate": "2024-09-10T10:00:00Z",
+            "description": "Esquema de la base de datos."
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "title": "Diseñar interfaz de usuario",
+        "description": "Crear el diseño de la interfaz de usuario.",
+        "assignedTo": "8",
+        "startDate": "2024-09-05",
+        "endDate": "2024-09-25",
+        "status": "pending",
+        "comments": [
+          {
+            "userId": "9",
+            "comment": "Revisar los mockups.",
+            "timestamp": "2024-09-20T15:00:00Z"
+          }
+        ],
+        "files": [
+          {
+            "fileId": "4",
+            "uploadedBy": "8",
+            "uploadDate": "2024-09-15T14:00:00Z",
+            "description": "Mockups iniciales."
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "title": "Implementar API REST",
+        "description": "Desarrollar la API REST para la aplicación.",
+        "assignedTo": "10",
+        "startDate": "2024-09-06",
+        "endDate": "2024-09-30",
+        "status": "not_assigned",
+        "comments": [],
+        "files": []
+      },
+      {
+        "id": "7",
+        "title": "Realizar pruebas unitarias",
+        "description": "Crear y ejecutar pruebas unitarias.",
+        "assignedTo": "1",
+        "startDate": "2024-09-07",
+        "endDate": "2024-09-28",
+        "status": "completed",
+        "comments": [
+          {
+            "userId": "2",
+            "comment": "Pruebas unitarias completadas.",
+            "timestamp": "2024-09-27T16:00:00Z"
+          }
+        ],
+        "files": [
+          {
+            "fileId": "5",
+            "uploadedBy": "1",
+            "uploadDate": "2024-09-20T13:00:00Z",
+            "description": "Resultados de las pruebas unitarias."
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "title": "Configurar servidor",
+        "description": "Configurar el servidor para la aplicación.",
+        "assignedTo": "3",
+        "startDate": "2024-09-08",
+        "endDate": "2024-09-22",
+        "status": "pending",
+        "comments": [
+          {
+            "userId": "4",
+            "comment": "Revisar la configuración del servidor.",
+            "timestamp": "2024-09-21T17:00:00Z"
+          }
+        ],
+        "files": [
+          {
+            "fileId": "6",
+            "uploadedBy": "3",
+            "uploadDate": "2024-09-18T11:00:00Z",
+            "description": "Configuración del servidor."
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "title": "Optimizar rendimiento",
+        "description": "Optimizar el rendimiento de la aplicación.",
+        "assignedTo": "5",
+        "startDate": "2024-09-09",
+        "endDate": "2024-09-29",
+        "status": "not_assigned",
+        "comments": [],
+        "files": []
+      },
+      {
+        "id": "10",
+        "title": "Desplegar aplicación",
+        "description": "Desplegar la aplicación en el entorno de producción.",
+        "assignedTo": "6",
+        "startDate": "2024-09-10",
+        "endDate": "2024-09-30",
+        "status": "pending",
+        "comments": [
+          {
+            "userId": "7",
+            "comment": "Preparar el entorno de producción.",
+            "timestamp": "2024-09-28T18:00:00Z"
+          }
+        ],
+        "files": [
+          {
+            "fileId": "7",
+            "uploadedBy": "6",
+            "uploadDate": "2024-09-25T12:00:00Z",
+            "description": "Instrucciones de despliegue."
+          }
+        ]
+      }
+    ]
+}

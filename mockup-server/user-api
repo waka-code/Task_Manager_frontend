@@ -1,0 +1,74 @@
+{
+     "users": [
+      {
+        "id": "1",
+        "name": "Juan Pérez",
+        "email": "juan.perez@example.com",
+        "role": "Developer",
+        "tasks": ["1", "7"]
+      },
+      {
+        "id": "2",
+        "name": "Ana Gómez",
+        "email": "ana.gomez@example.com",
+        "role": "Project Manager",
+        "tasks": []
+      },
+      {
+        "id": "3",
+        "name": "Carlos Ruiz",
+        "email": "carlos.ruiz@example.com",
+        "role": "Backend Developer",
+        "tasks": ["2", "8"]
+      },
+      {
+        "id": "4",
+        "name": "Laura Martínez",
+        "email": "laura.martinez@example.com",
+        "role": "QA Engineer",
+        "tasks": []
+      },
+      {
+        "id": "5",
+        "name": "Pedro Sánchez",
+        "email": "pedro.sanchez@example.com",
+        "role": "DevOps Engineer",
+        "tasks": ["3", "9"]
+      },
+      {
+        "id": "6",
+        "name": "María López",
+        "email": "maria.lopez@example.com",
+        "role": "Database Administrator",
+        "tasks": ["4", "10"]
+      },
+      {
+        "id": "7",
+        "name": "Luis Fernández",
+        "email": "luis.fernandez@example.com",
+        "role": "Frontend Developer",
+        "tasks": []
+      },
+      {
+        "id": "8",
+        "name": "Sofía Ramírez",
+        "email": "sofia.ramirez@example.com",
+        "role": "UI/UX Designer",
+        "tasks": ["5"]
+      },
+      {
+        "id": "9",
+        "name": "Miguel Torres",
+        "email": "miguel.torres@example.com",
+        "role": "Product Owner",
+        "tasks": []
+      },
+      {
+        "id": "10",
+        "name": "Waddimi Saint-Louis",
+        "email": "Waddimi.Saint-Louis@example.com",
+        "role": "System Engineer",
+        "tasks": ["6"]
+      }
+    ]
+}
