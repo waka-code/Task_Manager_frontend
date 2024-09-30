@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FileSvg } from "../../assets/svg/FileSvg";
-import { HomeIcon } from "../../assets/svg/homeIcon";
+import { HomeIcon } from "../../assets/svg/HomeIcon";
 import { MessagesSvg } from "../../assets/svg/MessagesSvg";
 import { SettingsSvg } from "../../assets/svg/SettingsSvg";
 import { TaskSvg } from "../../assets/svg/TaskSvg";
@@ -37,9 +37,10 @@ export function RightAlignedHeader() {
           <div
             className={`cursor-pointer p-1.5`}
             style={{
-              backgroundColor: isSelected ? "#0ea5e9" : "transparent",
+              backgroundColor: isSelected ? "#4f46e5" : "transparent",
               borderRadius: isSelected ? "30%" : "0%",
-              boxShadow: isSelected ? "0px 4px 6px rgba(0, 0, 0, 0.3)" : "none",
+              boxShadow: isSelected ? "0px 4px 6px rgba(79, 70, 229, 0.5)" : "none",
+
             }}
             key={key}
             onClick={() => setIconsSelected(key)}
