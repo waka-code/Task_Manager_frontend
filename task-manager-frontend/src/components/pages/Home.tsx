@@ -37,20 +37,21 @@ export function Home() {
     }
   }, [])
 
-
   const status = useMemo(() => {
-    const tasks = fetchTasks.state?.data
+    const tasks = fetchTasks.state?.data?.tasks
 
-    console.log(tasks)
     if (!tasks) return undefined;
-    return {
-      icons: icons(tasks.status),
-      status: tasks.status,
-      taskAmount: taskAmount(tasks.status),
-    };
+
+    return tasks.map((tasks)=>{
+      return {
+        icons: icons(tasks.status),
+        status: tasks.status,
+        taskAmount: taskAmount(tasks.status),
+      };
+    })
   }, [fetchTasks]);
 
-  console.log("äA ", status);
+  console.log("Status object:", status);
 
   return <div className="bg-slate-100 w-full p-12">
     <TaskInfoBox status={status} />

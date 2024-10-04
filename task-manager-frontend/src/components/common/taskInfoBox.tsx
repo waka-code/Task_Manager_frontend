@@ -7,7 +7,7 @@ type Props = {
 }
 
 type PropsStatus = {
- status: Props | undefined;
+ status: Props[] | undefined;
 }
 
 export function TaskInfoBox(props: PropsStatus) {
@@ -30,46 +30,59 @@ export function TaskInfoBox(props: PropsStatus) {
 
 
  return (
-  <div className="max-h-80 max-w-full bg-white rounded-2xl p-6" style={{
-   height: "fit-content",
-   width: "fit-content"
+  <div style={{
+   display: "grid",
+   gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+   gap: "1rem",
+   width: "100%",
+   height: "fit-content"
   }}>
-   
-   <div className="flex justify-between items-center">
-    <div className="flex items-center gap-4">
-     <div>
-      {props.status?.icons}
+   {props.status?.map((status, idx) => {
+    return (
+     <div key={idx}
+      className="max-h-80 max-w-full bg-white rounded-2xl p-6" style={{
+       height: "fit-content",
+       width: "fit-content"
+      }}
+     >
+      <div className="flex justify-between items-center">
+       <div className="flex items-center gap-4">
+        <div>
+         {status.icons}
+        </div>
+        <p className="text-lg text-slate-400">{status.status}</p>
+       </div>
+       <p className="text-lg text-slate-800 font-bold">{status.taskAmount}</p>
+      </div>
+      <hr className="my-3" />
+      <div >
+       <div className="max-w-full max-h-80">
+        <ResponsiveLine
+         data={fakeData}
+         margin={{ top: 0, right: 0, bottom: 0, left: 0 }}
+         pointSize={10}
+         pointColor={{ theme: 'background' }}
+         pointBorderWidth={2}
+         pointLabel="data.yFormatted"
+         pointLabelYOffset={-12}
+         enableTouchCrosshair={true}
+         useMesh={true}
+         enableGridX={false}
+         enableGridY={false}
+        />
+       </div>
+       <div style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop: "0.4rem"
+       }}>
+        <p className="text-xs cursor-pointer">{status.taskAmount}+ more from last week</p>
+       </div>
+      </div>
      </div>
-     <p className="text-lg text-slate-400">{props.status?.status}</p>
-    </div>
-    <p className="text-lg text-slate-800 font-bold">{props.status?.taskAmount}</p>
-   </div>
-   <hr className="my-3" />
-   <div >
-    <div className="max-w-full max-h-80">
-     <ResponsiveLine
-      data={fakeData}
-      margin={{ top: 0, right: 0, bottom: 0, left: 0 }}
-      pointSize={10}
-      pointColor={{ theme: 'background' }}
-      pointBorderWidth={2}
-      pointLabel="data.yFormatted"
-      pointLabelYOffset={-12}
-      enableTouchCrosshair={true}
-      useMesh={true}
-      enableGridX={false}
-      enableGridY={false}
-     />
-    </div>
-    <div style={{
-     display: "flex",
-     alignItems: "center",
-     justifyContent: "center",
-     marginTop: "0.4rem"
-    }}>
-     <p className="text-xs cursor-pointer">{props.status?.taskAmount}+ more from last week</p>
-    </div>
-   </div>
+    )
+   })}
   </div>
  )
 }
