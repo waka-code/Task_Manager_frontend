@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
+import { Task } from "../types/types";
 
 type FetcherProps = {
-    data: [] | undefined,
+    data: Task | undefined,
     loading: boolean,
     error: Error | null | unknown
 }
